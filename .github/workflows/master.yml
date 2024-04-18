@@ -108,8 +108,8 @@ jobs:
           username: ${{ secrets.DOCKERUSER }}
           password: ${{ secrets.DOCKERPASS }}
 
-      - name: Tag Docker image
-        run: docker tag 5gc-amf:1.4.1-dev bond00701011990722/amf_aj
+      #- name: Tag Docker image
+      #  run: docker tag 5gc-amf:1.4.1-dev bond00701011990722/amf_aj
 
       - name: Push Docker image to Docker Hub
         run: docker push bond00701011990722/amf_aj
