@@ -107,9 +107,9 @@ jobs:
       - uses: docker/setup-buildx-action@v3.0.0
       
       - name: Build Docker image
-        run: make docker-build
-        run: make docker-push
-
+        run: 
+          make docker-build
+          make docker-push
 
       #- name: Tag Docker image
       #  run: docker tag 5gc-amf:1.4.1-dev bond00701011990722/amf_aj
